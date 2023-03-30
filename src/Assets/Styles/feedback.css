@@ -1,0 +1,104 @@
+
+.feedback{
+    width: 70%;
+    padding: 14px;
+    border-radius: 11px;
+    transition: width 2s, height 4s;
+    box-shadow: rgba(3, 102, 214, 0.5) 0px 0px 0px 3px;
+}
+.feedback input{
+    margin: auto;
+    height: 52px;
+    width: 90%;
+    font-size: 20px;
+    color: black;
+}
+.feedback textarea{
+    margin: auto;
+    width: 90%;
+}
+
+.giveFeedback{
+    text-align: center;
+    margin-top: 15px;
+    padding:14px 25px ;
+    border-top-right-radius: 111px ;
+    border-bottom-right-radius: 111px ;
+    font-size: 20px;
+    border: none;
+    background: #6aa5fd;
+   
+    font-weight: 600;    
+    box-shadow: rgba(3, 102, 214, 0.8) 0px 0px 0px 3px;
+}
+.giveFeedback a , .seeReview a ,.ourServices a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.seeReview{
+    position: absolute;
+    text-align: center;
+    right: 0;
+    margin: 15px 0px;
+    padding:14px 25px ;
+    border-top-left-radius: 111px ;
+    border-bottom-left-radius: 111px ;
+    font-size: 20px;
+    border: none;
+    background: #f75617;
+    color: aliceblue;
+    font-weight: 600;    
+    box-shadow: rgba(214, 82, 5, 0.5) 0px 0px 0px 3px;
+}
+
+.ourServices{
+    text-align: center;
+    margin-top: 30px;
+    padding:14px 25px ;
+    border-top-right-radius: 111px ;
+    border-bottom-right-radius: 111px ;
+    font-size: 20px;
+    border: none;
+    background: #5fc202;
+   
+    font-weight: 600;    
+    box-shadow: rgba(99, 255, 138, 0.8) 0px 0px 0px 3px;
+}
+
+/* section heading styles */
+#reviewSectionHeading{
+
+    height: 50px;
+    border-left: solid 10px;
+    border-color:#f75617 ;
+}
+#reviewSectionHeading h4,#feedbackSectionHeading h4 ,#ourServicesSectionHeading h4{
+    padding: 14px 2px;
+    font-weight:700;
+}
+
+#feedbackSectionHeading{
+    height: 60px;
+    border-left: solid 10px;
+    border-color: #6aa5fd;
+}
+
+#ourServicesSectionHeading{
+    height: 60px;
+    border-left: solid 10px;
+    border-color: #5fc202;
+}
+
+
+
+
+@media only screen and (max-width: 988px) {
+
+    .feedback{
+        width: 90%;
+
+    }
+
+    
+
+}

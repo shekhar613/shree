@@ -1,0 +1,10 @@
+.floting_upBtn{
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 20px;
+}
+.floting_upBtn i{
+    color: black;
+    font-size: 50px;
+}

@@ -1,0 +1,31 @@
+.review_card{
+    padding: 14px;
+    /* background: #000; */
+    max-width:450px;
+    width: fit-content;
+    height:max-content;
+
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin: 14px ;
+    border-radius:5px;    
+}
+
+
+.review_card .reviewsubSection{
+    display: flex;
+   
+    
+}
+.reviewsubSection .review_name{
+    padding: 10px 15px; 
+    text-align: start;
+    color: #868686;
+}
+.reviewsubSection i{
+    font-size: 45px;
+    color: rgb(255, 81, 0);
+    padding: 14px;
+    border-radius: 100%;
+    background: #ffffff;
+    
+}

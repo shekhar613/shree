@@ -1,0 +1,30 @@
+footer{
+    
+    /* height: 280p; */
+    width: 100%;
+    background: #051d49;
+    margin-top: 125px;
+    /* text-align: center; */
+    padding: 14px 15px;
+    
+}
+footer .footersubTitle{
+    text-align: right;
+    padding: 14px;
+}
+
+footer .socialMedia{
+    display: grid;
+    padding: 14px 10px;
+    
+
+}
+.socialMedia a{
+    text-decoration: none;
+    color: aliceblue;
+}
+footer .socialMedia i{
+    color: red;
+    font-size: 25px;
+    padding: 15px;
+}

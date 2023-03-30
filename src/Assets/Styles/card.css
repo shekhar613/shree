@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.profile_section{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* background: #000; */
+    height:350px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    
+}
+
+.profile_section .profile{
+    background: #000;
+    width: 100%;
+    height: 120px;
+    position:absolute;
+}
+.profile_logo{
+    background: #e60000;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position:relative;
+    border-style: dotted;
+    border: 20px #e60000;
+    top: 50px;
+    left:10% ;
+    box-shadow: rgba(3, 102, 214, 0.99) 0px 0px 0px 3px;
+}
+.profile_section .badges_for_navigation{
+    position: relative;
+    display: flex;
+    top: 7px;
+    width: fit-content;
+    margin-left: 170px;
+
+}
+.profile_section .badges_for_navigation a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.profile_section .profile_description{
+    position:relative;
+    top:50px ;
+}
+
+
+
+.blogCard{
+    background: rgb(255, 255, 255);
+    width:260px;
+    /* height:270px ; */
+    margin: auto;
+    padding: 8px;
+    border-radius: 11px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    
+    
+}
+
+.blogCard .topSection{
+    
+    /* display: flex; */
+}
+.blogCard .topSection .blogCardImg{
+    width: 100%;
+    /* height: 20%; */
+    border-radius: 11px;
+    margin: auto;
+    padding: 5px;
+    /* background: #000; */
+    box-shadow: rgba(3, 102, 214, 0.5) 0px 0px 0px 2px;
+ 
+}
+.blogCard .topSection .textSection{
+    width: 100%;
+    /* margin: auto; */
+    word-wrap: break-word;
+    padding: 12px;
+    /* padding-left: 15px; */
+    text-overflow: none;
+    /* background: #000; */
+
+}
+
+.textSection .blogCardtitle{
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+
+}
+.textSection .cardButton{
+    border-radius: 111px;
+    padding-left: 9px;    
+    
+}
+
+
+.blogCard .cardContains{
+  
+    padding: 5px;
+}
+/* for desktop view */
+@media only screen and (min-width: 988px) {
+    
+    .profile_section{
+        height: 450px;
+    }
+    .profile_section .profile{
+        width: 100%;
+        height: 200px;
+    }
+    .profile_logo{
+        top: 130px;
+    
+    }
+    .profile_section .badges_for_navigation{
+        top: 110px;
+        padding-left: 150px;
+    }
+
+    .profile_section .profile_description{
+        top: 150px;
+        padding-left: 20px;
+    }
+
+    .blogCard{
+        /* height: 400px; */
+        width: 80%;
+    }
+    .blogCard .topSection{
+    
+    display: flex;
+}
+    .blogCard .topSection .blogCardImg{
+        width: 50%;
+    }
+}
+
+/* for normal phone size */
+@media only screen and (max-width: 988px) {
+    .blogCard{
+        width: 95%;
+        height: max-content;
+    }
+}
+
+/* for exceptional phone size extra small size (360px) */
+@media only screen and (max-width: 360px) {
+    
+    .profile_section .badges_for_navigation{
+        display: block;
+    }
+
+}

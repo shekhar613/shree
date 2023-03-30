@@ -1,0 +1,25 @@
+.formsubmited{
+    background: #01ca1c;
+    width: 90%;
+    margin: auto;
+    border-radius: 11px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+.formsubmited i{
+    padding: 14px;
+    color: aliceblue;
+    font-size: 80px;
+    
+}
+.formsubmited h1{
+    color: aliceblue;
+}
+.formsubmited button{
+    padding: 14px;
+    background: transparent;
+    color: aliceblue;
+    border: none;
+    font-size: 16px;
+    
+}
