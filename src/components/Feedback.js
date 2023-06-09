@@ -114,27 +114,27 @@ export default function Feedback() {
       <form method='POST'>
         <div className="mb-3 my-3">
           <label className="mx-3 form-label">अपना नाम दर्ज करें</label>
-          <input required type="text" className="form-control" value={name} onChange={(e) => setname(e.target.value)} />
+          <input required type="text" className="form-control" value={name} onChange={(e) => setname(e.target.value)} required/>
         </div>
 
         <div className="mb-3">
           <label className="mx-3 form-label">अपना फोन नंबर दर्ज करें</label>
-          <input required type="tel" className="form-control" value={Phone} onChange={(e) => setPhone(e.target.value)} />
+          <input required type="tel" className="form-control" value={Phone} onChange={(e) => setPhone(e.target.value)} required/>
         </div>
 
         <div className="mb-3">
           <label className="mx-3 form-label">अपना पता दर्ज करें</label>
-          <input required type="text" className="form-control" value={Address} onChange={(e) => setAddress(e.target.value)} />
+          <input required type="text" className="form-control" value={Address} onChange={(e) => setAddress(e.target.value)} required/>
         </div>
 
         <div className="mb-3">
           <label className="mx-3 form-label">आपकी समस्या क्या थी</label>
-          <textarea className="form-control" rows="2" value={problem} onChange={(e) => setproblem(e.target.value)} ></textarea>
+          <textarea className="form-control" rows="2" value={problem} onChange={(e) => setproblem(e.target.value)} required></textarea>
         </div>
 
         <div className="mb-3">
           <label className="mx-3 form-label">अब आपका क्या अनुभव है</label>
-          <textarea className="form-control" value={experience} onChange={(e) => setexperience(e.target.value)} id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea className="form-control" value={experience} onChange={(e) => setexperience(e.target.value)} id="exampleFormControlTextarea1" rows="3" required></textarea>
         </div>
 
         <button onClick={submiteData} className='my-4 mx-3 btn btn-primary' type='submite'>सब्मिट करे</button>
