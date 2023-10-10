@@ -21,7 +21,7 @@ const Card = () => {
           <h5><span className="mx-1 badge bg-success"><NavLink to="/" >फीडबैक</NavLink></span></h5>
         </div>
         <div className='profile_description'>
-          <h5 className='mx-4 text-primary profile_name'>महर्षि जमना लाल जोशी</h5>
+          <h5 className='mx-4 text-primary profile_name'>डॉ.जमना लाल जोशी</h5>
           <p className='mx-4 text-secondary profile_title'>श्री भेरव शक्ति जन कल्याण रथ <br />ज्योतिष परामर्श - इंडिया<br /><br />38 मंगल मार्ग गांधीनगर इंदौर मध्य प्रदेश</p>
         </div>
       </div>
