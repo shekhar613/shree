@@ -41,6 +41,23 @@ const Card = () => {
 
         <div className='blogCard my-5 '>
           <div className='topSection'>
+            <img className="blogCardImg" src={phd_oct_2023_2} alt='...'></img>
+            <div className="textSection">
+              <p className='blogCardtitle text-warning' >वैदिक ज्योतिष में मानद डॉक्टरेट</p>
+              <p className='blogCardtitle text-danger' >मध्य प्रदेश , इंदौर</p>
+              <p className='blogCardtitle' >7 अक्टूबर 2023</p>
+
+            </div>
+          </div>
+          <div className='cardContains'>
+            माॅ भुवनेश्वरी ज्योतिष वास्तु कर्मकांड शोध संस्थान एवं माॅ भुवनेश्वरी इंटरनेशनल यूनिवर्सिटी के तत्वाधान मे आयोजित वेदांग ज्योतिष महोत्सव एंव अलंकरण महोत्सव मे  वरिष्ठजानो द्वारा दिंनाकः 7-10-2023 को श्री पंडित जमनालाल जोशी को स्वर्ण पदक एवं वैदिक ज्योतिष में मानद डॉक्टरेट देकर सम्मानित किया गया
+          </div>
+
+        </div>
+        
+
+        <div className='blogCard my-5 '>
+          <div className='topSection'>
             <img className="blogCardImg" src={top_10Award} alt='...'></img>
             <div className="textSection">
               <p className='blogCardtitle text-warning' >TOP 10 अंतर्राष्ट्रीय ज्योतिष पुरस्कार एवम् गोल्ड मेडल दे कर सम्मानित किया </p>
