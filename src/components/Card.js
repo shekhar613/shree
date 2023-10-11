@@ -129,7 +129,7 @@ const Card = () => {
 
       </div>
 
-      <Slider img={[phd_gold, top_10Award, mharshi, LifetimeAchivement,march52023,phd_oct_2023_1,phd_oct_2023_2,phd_oct_2023_3,phd_oct_2023_4,phd_oct_2023_5]} ></Slider>
+      <Slider img={[phd_oct_2023_1, top_10Award, mharshi, LifetimeAchivement,march52023,phd_oct_2023_1,phd_oct_2023_2,phd_oct_2023_3,phd_oct_2023_4,phd_oct_2023_5]} ></Slider>
     </div>
   );
 }
