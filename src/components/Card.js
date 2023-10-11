@@ -10,11 +10,11 @@ import march52023 from '../Assets/Images/5march2023.jpeg';
 import Slider from './Slider';
 import { NavLink } from 'react-router-dom';
 // Phd oct 2023
-import march52023 from '../Assets/Images/Phd-oct-2023img-1.jpeg';
-import march52023 from '../Assets/Images/Phd-oct-2023img-2.jpeg';
-import march52023 from '../Assets/Images/Phd-oct-2023img-3.jpeg';
-import march52023 from '../Assets/Images/Phd-oct-2023img-4.jpeg';
-import march52023 from '../Assets/Images/Phd-oct-2023img-5.jpeg';
+import phd_oct_2023_1 from '../Assets/Images/Phd-oct-2023img-1.jpeg';
+import phd_oct_2023_2 from '../Assets/Images/Phd-oct-2023img-2.jpeg';
+import phd_oct_2023_3 from '../Assets/Images/Phd-oct-2023img-3.jpeg';
+import phd_oct_2023_4 from '../Assets/Images/Phd-oct-2023img-4.jpeg';
+import phd_oct_2023_5 from '../Assets/Images/Phd-oct-2023img-5.jpeg';
 
 
 
@@ -129,7 +129,7 @@ const Card = () => {
 
       </div>
 
-      <Slider img={[phd_gold, top_10Award, mharshi, LifetimeAchivement,march52023]} ></Slider>
+      <Slider img={[phd_gold, top_10Award, mharshi, LifetimeAchivement,march52023,phd_oct_2023_1,phd_oct_2023_2,phd_oct_2023_3,phd_oct_2023_4,phd_oct_2023_5]} ></Slider>
     </div>
   );
 }
