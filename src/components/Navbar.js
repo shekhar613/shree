@@ -12,7 +12,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg" style={{backgroundColor: '#011D3B', backgroundImage:`url(${profile_bg})`}}>
         <div className="container-fluid">
           <NavLink className="navbar-brand" to=""><img src={logo} alt="logo.."></img></NavLink>
-          <p className='logo_text  my-1' style={{textShadow: '#ffff 1px 0 10px'}}> श्री भैरव शक्ति </p>
+          <p className='logo_text  my-1' style={{textShadow: '#0000 1px 0 10px'}}> श्री भैरव शक्ति </p>
           <button className="navbar-toggler" type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="togglericon">&#8215;</span>
           </button>
