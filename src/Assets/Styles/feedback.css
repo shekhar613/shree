@@ -1,104 +1,131 @@
-
-.feedback{
-    width: 70%;
-    padding: 14px;
-    border-radius: 11px;
-    transition: width 2s, height 4s;
-    box-shadow: rgba(3, 102, 214, 0.5) 0px 0px 0px 3px;
-}
-.feedback input{
-    margin: auto;
-    height: 52px;
-    width: 90%;
-    font-size: 20px;
-    color: black;
-}
-.feedback textarea{
-    margin: auto;
-    width: 90%;
-}
-
-.giveFeedback{
-    text-align: center;
-    margin-top: 15px;
-    padding:14px 25px ;
-    border-top-right-radius: 111px ;
-    border-bottom-right-radius: 111px ;
-    font-size: 20px;
-    border: none;
-    background: #6aa5fd;
-   
-    font-weight: 600;    
-    box-shadow: rgba(3, 102, 214, 0.8) 0px 0px 0px 3px;
-}
-.giveFeedback a , .seeReview a ,.ourServices a{
-    text-decoration: none;
-    color: aliceblue;
-}
-.seeReview{
-    position: absolute;
-    text-align: center;
-    right: 0;
-    margin: 15px 0px;
-    padding:14px 25px ;
-    border-top-left-radius: 111px ;
-    border-bottom-left-radius: 111px ;
-    font-size: 20px;
-    border: none;
-    background: #f75617;
-    color: aliceblue;
-    font-weight: 600;    
-    box-shadow: rgba(214, 82, 5, 0.5) 0px 0px 0px 3px;
-}
-
-.ourServices{
-    text-align: center;
-    margin-top: 30px;
-    padding:14px 25px ;
-    border-top-right-radius: 111px ;
-    border-bottom-right-radius: 111px ;
-    font-size: 20px;
-    border: none;
-    background: #5fc202;
-   
-    font-weight: 600;    
-    box-shadow: rgba(99, 255, 138, 0.8) 0px 0px 0px 3px;
-}
-
-/* section heading styles */
-#reviewSectionHeading{
-
-    height: 50px;
-    border-left: solid 10px;
-    border-color:#f75617 ;
-}
-#reviewSectionHeading h4,#feedbackSectionHeading h4 ,#ourServicesSectionHeading h4{
-    padding: 14px 2px;
-    font-weight:700;
-}
-
-#feedbackSectionHeading{
-    height: 60px;
-    border-left: solid 10px;
+/* Feedback Container */
+.feedback-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+    border-left: 5px solid #6aa5fd;
+    padding-left: 10px;
+  }
+  
+  /* Feedback Form */
+  .feedback-form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
     border-color: #6aa5fd;
-}
-
-#ourServicesSectionHeading{
-    height: 60px;
-    border-left: solid 10px;
-    border-color: #5fc202;
-}
-
-
-
-
-@media only screen and (max-width: 988px) {
-
-    .feedback{
-        width: 90%;
-
+    box-shadow: 0 0 5px rgba(106, 165, 253, 0.5);
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    background-color: #6aa5fd;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #4a8df5;
+  }
+  
+  /* Learn More Button */
+  .learn-more-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #6aa5fd;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #4a8df5;
+  }
+  
+  /* Reviews Section */
+  .reviews-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviews-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+    border-left: 5px solid #f75617;
+    padding-left: 10px;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .feedback-container,
+    .reviews-container {
+      padding: 15px;
     }
-
-    
-
-}
+  
+    .feedback-heading,
+    .reviews-heading {
+      font-size: 20px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 14px;
+    }
+  
+    .submit-button,
+    .learn-more-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }

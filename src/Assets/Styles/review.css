@@ -1,31 +1,162 @@
-.review_card{
-    padding: 14px;
-    /* background: #000; */
-    max-width:450px;
-    width: fit-content;
-    height:max-content;
-
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    margin: 14px ;
-    border-radius:5px;    
-}
-
-
-.review_card .reviewsubSection{
+/* Review Container */
+.review-container {
     display: flex;
-   
-    
-}
-.reviewsubSection .review_name{
-    padding: 10px 15px; 
-    text-align: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Review Card */
+  .review-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Height adjusts to content */
+    width: 100%; /* Default width */
+    max-width: 350px; /* Maximum width for smaller cards */
+    animation: fadeIn 0.5s ease-out; /* Apply fade-in animation */
+  }
+  
+  /* Wider Cards for More Content */
+  .review-card.wide {
+    max-width: 500px; /* Wider width for cards with more content */
+  }
+  
+  /* Delay Animation for Each Card */
+  .review-card {
+    animation-delay: calc(var(--index) * 0.1s); /* Delay based on card index */
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Review Header */
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .user-icon {
+    font-size: 24px;
+    color: #ff5500;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .user-details h6 {
+    margin: 0;
+    font-size: 14px;
     color: #868686;
+  }
+  
+  .user-details h6:first-child {
+    font-weight: 600;
+    color: #333333;
+  }
+  
+  /* Review Content */
+  .review-content {
+    flex: 1; /* Ensures content takes up remaining space */
+  }
+  
+  .review-content h5 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333333;
+  }
+  
+  .problem-text {
+    font-size: 16px;
+    color: #555555;
+    margin: 10px 0;
+  }
+  
+  .divider {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 15px 0;
+  }
+  
+  .experience-text {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+  }
+  
+  /* Review Rating */
+  .review-rating {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+  }
+  
+  .star-icon {
+    font-size: 18px;
+    color: #ffc107;
+  }
+  
+  /* Total Reviews Section */
+.total-reviews {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.reviewsubSection i{
-    font-size: 45px;
-    color: rgb(255, 81, 0);
-    padding: 14px;
-    border-radius: 100%;
-    background: #ffffff;
-    
+
+.total-reviews h3 {
+  font-size: 24px;
+  color: #a5a5a5;
+  font-weight: 600;
+  margin: 0;
 }
+
+
+
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .review-card {
+      max-width: 100%;
+    }
+  
+    .review-card.wide {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .review-content h5 {
+      font-size: 16px;
+    }
+  
+    .problem-text {
+      font-size: 14px;
+    }
+  
+    .experience-text {
+      font-size: 13px;
+    }
+  
+    .star-icon {
+      font-size: 16px;
+    }
+  }

@@ -1,126 +1,83 @@
-/* nav {
-    background: #E1E1E1;
-    position: absolute;
-    width: 100%;
-    height: 70px;
-    color: black;
-}
-
-nav ul {
+/* Navbar Container */
+nav {
+    padding: 10px 20px;
+    background-color: #ffffff; /* Light background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Logo and Brand Name */
+  .navbar-brand {
     display: flex;
-    margin-left:15px ;
-}
-} */
-
-nav{
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
-    padding: 15px;
-    color:#FDFDFD;
-}
-nav .logo_text{
-    color: #FDFDFD;
-    font-size: 25px;
-    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25); 
-}
-nav ul li {
-    font-size: 20px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #FDFDFD;
-    /* margin-left: 20px; */
-}
-
-
-
-nav img {
+    align-items: center;
+  }
+  
+  .navbar-logo {
     width: 50px;
     height: 50px;
-   
-    filter: drop-shadow(0px 4px 4px #005CEC);
-    border-radius: 113px;
-}
-
-.navigator_forPhone {
-    /* padding-top: 70px; */
-    width: 0%;
-    transition: width 2s;
-    height: 50px;
-    background: rgb(245, 245, 245);
-    color: black;
-    display: none;
-    box-shadow: rgba(145, 145, 145, 0.1) 0px 4px 12px;
-}
-
-.navigator_forPhone .phonenavigator_tab {
-    border-bottom: none;
-    height: 110%;
-
-}
-
-
-
-.navigator_forPhone ul {
-    width: 80%;
-    /* background: #000; */
-    display: flex;
-    margin: auto;
-    padding-left: 0px;
-    justify-content: space-between;
-    padding-top: 9px;
-}
-
-.navigator_forPhone ul li {
-    font-size: 1.2rem;
-    list-style: none;
-    /* padding-left: 20px; */
-   
-}
-.navigator_forPhone ul li a{
-    text-decoration: none;
-    color: black;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-
-/* initial tab opens */
-.navigator_forPhone .activetabFor_phone {
-    border-bottom: 3px solid black;
-}
-
-
-/*  */
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 988px) {
-
-    nav ul {
-        display: none;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .logo-text {
+    color: #333333; /* Dark text for contrast */
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Navbar Links */
+  .navbar-nav {
+    gap: 40px;
+  }
+  
+  .nav-link {
+    color: #333333 !important; /* Dark text for contrast */
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #005CEC !important; /* Accent color on hover */
+  }
+  
+  .nav-link.active {
+    border-bottom: 2px solid #005CEC; /* Highlight active link */
+  }
+  
+  /* Hamburger Menu */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51, 51, 51, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 992px) {
+    .navbar-nav {
+      background-color: rgba(255, 255, 255, 0.9); /* Light background for mobile menu */
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      text-align: center;
     }
-
-    nav img{
-        width: 60px;
-        height: 65px;
-        left: 20px;
-        top: 20px;
+  
+    .nav-link {
+      text-align: center;
     }
-    .navigator_forPhone {
-        display: block;
-        width: 100%;
+  
+    .navbar-logo {
+      width: 40px;
+      height: 40px;
     }
-    .togglericon{
-        height: 14px;
-        font-size: 40px;
-        padding: 14px;
-    
-        /* border: none; */
-        color: #FDFDFD;
+  
+    .logo-text {
+      font-size: 20px;
     }
-}
+  }
