@@ -16,6 +16,18 @@ import phd_oct_2023_4 from '../Assets/Images/Phd-oct-2023img-4.jpeg';
 import phd_oct_2023_5 from '../Assets/Images/Phd-oct-2023img-5.jpeg';
 
 const Card = () => {
+  const images = [
+    phd_gold,
+    top_10Award,
+    mharshi,
+    LifetimeAchivement,
+    march52023,
+    phd_oct_2023_1,
+    phd_oct_2023_2,
+    phd_oct_2023_3,
+    phd_oct_2023_4,
+    phd_oct_2023_5,
+  ];
   // Array of blog card data
   const blogCards = [
     {
@@ -114,18 +126,7 @@ const Card = () => {
 
       {/* Slider */}
       <Slider
-        img={[
-          phd_gold,
-          top_10Award,
-          mharshi,
-          LifetimeAchivement,
-          march52023,
-          phd_oct_2023_1,
-          phd_oct_2023_2,
-          phd_oct_2023_3,
-          phd_oct_2023_4,
-          phd_oct_2023_5,
-        ]}
+        img={images}
       />
     </div>
   );

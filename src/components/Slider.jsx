@@ -1,38 +1,66 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import '../Assets/Styles/slider.css';
 
 function Slider(props) {
-    return (
-        // src = { props.img }
-        <>
-            <div id="carouselExampleInterval" className="mx-3 carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active" data-bs-interval="2000">
-                        <img src={props.img[0] } className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item" data-bs-interval="2000">
-                        <img src={ props.img[1] } className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item" data-bs-interval="2000">
-                        <img src={ props.img[2] } className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item" data-bs-interval="2000">
-                        <img src={ props.img[3] } className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item" data-bs-interval="2000">
-                        <img src={ props.img[4] } className="d-block w-100" alt="..."/>
-                    </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
-        </>
-    )
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Function to go to the next slide
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % props.img.length);
+  };
+
+  // Function to go to the previous slide
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? props.img.length - 1 : prevIndex - 1
+    );
+  };
+
+  // Auto-slide functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, [currentIndex]);
+
+  return (
+    <div className="slider-container">
+      {/* Slider Images */}
+      <div
+        className="slider"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {props.img.map((image, index) => (
+          <div
+            key={index}
+            className="slide"
+            style={{ backgroundImage: `url(${image})` }}
+          ></div>
+        ))}
+      </div>
+
+      {/* Navigation Buttons */}
+      <button className="slider-button prev" onClick={prevSlide}>
+        &#10094; {/* Left arrow */}
+      </button>
+      <button className="slider-button next" onClick={nextSlide}>
+        &#10095; {/* Right arrow */}
+      </button>
+
+      {/* Dots Indicator */}
+      <div className="dots-container">
+        {props.img.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(index)}
+          ></span>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default Slider
+export default Slider;
