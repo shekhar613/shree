@@ -1,161 +1,254 @@
-*{
+/* General Reset */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-}
-
-.profile_section{
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    /* background: #000; */
-    height:350px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-    
-}
-
-.profile_section .profile{
-    background: #000;
+  }
+  
+  /* Card Container */
+  .card-container {
     width: 100%;
-    height: 120px;
-    position:absolute;
-}
-.profile_logo{
-    background: #e60000;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .profile-logo img {
     width: 120px;
     height: 120px;
-    border-radius: 100%;
-    position:relative;
-    border-style: dotted;
-    border: 20px #e60000;
-    top: 50px;
-    left:10% ;
-    box-shadow: rgba(3, 102, 214, 0.99) 0px 0px 0px 3px;
-}
-.profile_section .badges_for_navigation{
-    position: relative;
-    display: flex;
-    top: 7px;
-    width: fit-content;
-    margin-left: 170px;
-
-}
-.profile_section .badges_for_navigation a{
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.profile_section .profile_description{
-    position:relative;
-    top:50px ;
-}
-
-
-
-.blogCard{
-    background: rgb(255, 255, 255);
-    width:260px;
-    /* height:270px ; */
-    margin: auto;
-    padding: 8px;
-    border-radius: 11px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    
-    
-}
-
-.blogCard .topSection{
-    
-    /* display: flex; */
-}
-.blogCard .topSection .blogCardImg{
-    width: 100%;
-    /* height: 20%; */
-    border-radius: 11px;
-    margin: auto;
-    padding: 5px;
-    /* background: #000; */
-    box-shadow: rgba(3, 102, 214, 0.5) 0px 0px 0px 2px;
- 
-}
-.blogCard .topSection .textSection{
-    width: 100%;
-    /* margin: auto; */
-    word-wrap: break-word;
-    padding: 12px;
-    /* padding-left: 15px; */
-    text-overflow: none;
-    /* background: #000; */
-
-}
-
-.textSection .blogCardtitle{
-    font-size: 16px;
-    font-weight: bold;
-    width: 100%;
-
-}
-.textSection .cardButton{
-    border-radius: 111px;
-    padding-left: 9px;    
-    
-}
-
-
-.blogCard .cardContains{
+    border-radius: 50%;
+    border: 5px solid #007bff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
   
-    padding: 5px;
-}
-/* for desktop view */
-@media only screen and (min-width: 988px) {
-    
-    .profile_section{
-        height: 450px;
-    }
-    .profile_section .profile{
-        width: 100%;
-        height: 200px;
-    }
-    .profile_logo{
-        top: 130px;
-    
-    }
-    .profile_section .badges_for_navigation{
-        top: 110px;
-        padding-left: 150px;
-    }
-
-    .profile_section .profile_description{
-        top: 150px;
-        padding-left: 20px;
-    }
-
-    .blogCard{
-        /* height: 400px; */
-        width: 80%;
-    }
-    .blogCard .topSection{
-    
+  .badges-for-navigation {
+    margin-top: 20px;
+  }
+  
+  .badges-for-navigation .nav-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .badges-for-navigation .nav-link:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .profile-description {
+    margin-top: 20px;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .profile-title {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.5;
+  }
+  
+  /* Achievement Gallery */
+  .gallery-title {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .blogs-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Blog Card */
+  .blog-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .top-section {
     display: flex;
-}
-    .blogCard .topSection .blogCardImg{
-        width: 50%;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .blog-card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 15px;
+  }
+  
+  .text-section {
+    flex: 1;
+  }
+  
+  .blog-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff9800; /* Orange color for titles */
+    margin-bottom: 5px;
+  }
+  
+  .blog-card-subtitle {
+    font-size: 16px;
+    color: #e53935; /* Red color for subtitles */
+    margin-bottom: 5px;
+  }
+  
+  .blog-card-date {
+    font-size: 14px;
+    color: #777777;
+  }
+  
+  .card-content {
+    padding: 15px;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .profile-logo img {
+      width: 100px;
+      height: 100px;
     }
-}
-
-/* for normal phone size */
-@media only screen and (max-width: 988px) {
-    .blogCard{
-        width: 95%;
-        height: max-content;
+  
+    .profile-name {
+      font-size: 20px;
     }
-}
-
-/* for exceptional phone size extra small size (360px) */
-@media only screen and (max-width: 360px) {
-    
-    .profile_section .badges_for_navigation{
-        display: block;
+  
+    .profile-title {
+      font-size: 14px;
     }
+  
+    .blog-card {
+      width: 100%;
+    }
+  
+    .top-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .blog-card-img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
 
-}
+  /* Profile Section */
+.profile-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Subtle gradient background */
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Profile Logo */
+  .profile-logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #ffffff; /* White border for the logo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for the logo */
+    margin-bottom: 20px;
+  }
+  
+  /* Badges for Navigation */
+  .badges-for-navigation {
+    margin-bottom: 20px;
+  }
+  
+  .badges-for-navigation .nav-link {
+    text-decoration: none;
+    color: #007bff; /* Blue color for the link */
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .badges-for-navigation .nav-link:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #ffffff; /* White text on hover */
+  }
+  
+  /* Profile Description */
+  .profile-description {
+    margin-top: 20px;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    color: #333333; /* Dark text for contrast */
+    margin-bottom: 10px;
+    font-weight: 700; /* Bold font */
+  }
+  
+  .profile-title {
+    font-size: 16px;
+    color: #555555; /* Slightly lighter text */
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .profile-section {
+      padding: 20px 15px;
+    }
+  
+    .profile-logo img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .profile-name {
+      font-size: 20px;
+    }
+  
+    .profile-title {
+      font-size: 14px;
+    }
+  
+    .badges-for-navigation .nav-link {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
