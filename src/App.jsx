@@ -5,6 +5,7 @@ import Feedback from './components/Feedback';
 import Card from './components/Card';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React  from 'react';
+import ImageGallery from './components/ImageGallery/ImageGallery';
 
 const App=()=> {
   
@@ -23,6 +24,7 @@ const App=()=> {
             {/* <Route exact path='/blogs' element={<Blog  />}  /> */}
             {/* <Route exact path='/home' element={<Topcontainer  />}   /> */}
             <Route exact path='/profile' element={<Card  />}   />
+            <Route exact path='/image-gallery' element={<ImageGallery/>}   />
           </Routes>
         <Footer/>
       </BrowserRouter>
