@@ -39,6 +39,14 @@ import img34 from '../../Assets/Images/ImageGallery/34.jpg';
 import img35 from '../../Assets/Images/ImageGallery/35.jpg';
 import img36 from '../../Assets/Images/ImageGallery/36.jpg';
 
+import img37 from '../../Assets/Images/ImageGallery/37.jpg';
+import img38 from '../../Assets/Images/ImageGallery/38.jpg';
+import img39 from '../../Assets/Images/ImageGallery/39.jpg';
+import img40 from '../../Assets/Images/ImageGallery/40.jpg';
+import img41 from '../../Assets/Images/ImageGallery/41.jpg';
+import img42 from '../../Assets/Images/ImageGallery/42.jpg';
+import img43 from '../../Assets/Images/ImageGallery/43.jpg';
+
 function ImageGallery() {
     return (
         <div>
@@ -80,6 +88,16 @@ function ImageGallery() {
                         <img src={img9} style={{ width: '100%' }} alt="" />
                     </div>
 
+                    <div className="img-hover-zoom">
+                        <img src={img37} style={{ width: '100%' }} alt="" />
+                    </div>
+
+                    <div className="img-hover-zoom">
+                        <img src={img41} style={{ width: '100%' }} alt="" />
+                    </div>
+
+
+
 
                 </div>
 
@@ -115,6 +133,14 @@ function ImageGallery() {
                     <div className="img-hover-zoom">
                         <img src={img18} style={{ width: '100%' }} alt="" />
                     </div>
+
+                    <div className="img-hover-zoom">
+                        <img src={img38} style={{ width: '100%' }} alt="" />
+                    </div>
+
+                    <div className="img-hover-zoom">
+                        <img src={img42} style={{ width: '100%' }} alt="" />
+                    </div>
                 </div>
 
                 <div className="column">
@@ -148,6 +174,14 @@ function ImageGallery() {
                     </div>
                     <div className="img-hover-zoom">
                         <img src={img27} style={{ width: '100%' }} alt="" />
+                    </div>
+
+                    <div className="img-hover-zoom">
+                        <img src={img39} style={{ width: '100%' }} alt="" />
+                    </div>
+
+                    <div className="img-hover-zoom">
+                        <img src={img43} style={{ width: '100%' }} alt="" />
                     </div>
                 </div>
 
@@ -183,12 +217,16 @@ function ImageGallery() {
                     <div className="img-hover-zoom">
                         <img src={img36} style={{ width: '100%' }} alt="" />
                     </div>
+
+                    <div className="img-hover-zoom">
+                        <img src={img40} style={{ width: '100%' }} alt="" />
+                    </div>
                 </div>
 
 
             </div>
 
-<p>Last Upade : 10 March 2025</p>
+<p>Last Upade : 12 March 2025</p>
             
         </div>
     );
